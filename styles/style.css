@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+body {
+  background-color: hsl(225, 100%, 94%);
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.order-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 375px;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.order-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 1.775em;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+.annual-plan {
+  font-weight: 700;
+}
+
+p {
+  color: grey;
+  word-spacing: 1px;
+  line-height: 1.75rem;
+}
+
+.plan-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: hsl(225, 100%, 98%);
+  border-radius: 10px;
+}
+
+.proceed-btn {
+  padding: 15px 30px;
+  border: 0px;
+  border-radius: 10px;
+  background: hsl(245, 75%, 52%);
+  font-size: 0.975rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.cancel-link {
+  font-size: 0.975rem;
+  text-decoration: none;
+  font-weight: 700;
+  color: grey;
+}
+
+/* Active states */
+.change-btn:hover {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+}
+
+.proceed-btn:hover {
+  cursor: pointer;
+  background: hsl(224, 23%, 55%);
+}
+
+.cancel-link:hover {
+  color: hsl(245, 75%, 52%);
+}
