@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
 
+/* Reset */
 * {
   box-sizing: border-box;
   font-family: "Red Hat Display", sans-serif;
@@ -11,6 +12,18 @@
 body {
   background-color: hsl(225, 100%, 94%);
   height: 100vh;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+p {
+  color: grey;
+  word-spacing: 1px;
+  line-height: 1.75rem;
 }
 
 .container {
@@ -34,26 +47,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  padding: 1.775em;
+  padding: 2em;
 }
 
 .hero-img {
   width: 100%;
-}
-
-h1 {
-  font-weight: bold;
-  font-size: 1.5rem;
-  letter-spacing: 1px;
-}
-.annual-plan {
-  font-weight: 700;
-}
-
-p {
-  color: grey;
-  word-spacing: 1px;
-  line-height: 1.75rem;
 }
 
 .plan-container {
@@ -65,6 +63,16 @@ p {
   border-radius: 10px;
 }
 
+.plan-container p,
+a {
+  font-size: 0.9375rem;
+}
+
+.annual-plan {
+  font-weight: 700;
+  font-size: 0.9375rem;
+}
+
 .proceed-btn {
   padding: 15px 30px;
   border: 0px;
@@ -73,7 +81,6 @@ p {
   font-size: 0.975rem;
   font-weight: 700;
   color: #fff;
-  letter-spacing: 1px;
 }
 
 .cancel-link {
@@ -96,4 +103,20 @@ p {
 
 .cancel-link:hover {
   color: hsl(245, 75%, 52%);
+}
+
+/* Media Queries */
+@media (max-width: 375px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .plan-container p,
+  a {
+    font-size: 0.9rem;
+  }
 }
